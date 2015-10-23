@@ -1,0 +1,21 @@
+{
+    "name": "gr8m8",
+    "version": "1",
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "browser_action": {
+        "default_title": "gr8 m8",
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+    {
+        "matches": ["http://*/*","https://*/*"],
+        "js": ["myscript.js"],
+        "run_at": "document_end"
+    }
+    ],
+    "manifest_version": 2
+}
